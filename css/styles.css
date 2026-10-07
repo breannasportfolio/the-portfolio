@@ -1,0 +1,224 @@
+/*
+Author: Breanna Abee
+File: styles.css
+Date: 09/14/2026
+*/
+
+/*
+CSS Reset
+*/
+
+body, header
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #ff8888;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* style rules for body and images */
+
+body {
+    background-color: #ffb9b9;
+    text-align: center;
+    
+}
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+/* style rules for the navigation area */
+
+nav {
+    background-color: #ff8888
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a{
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+/* style rules for headers and footer */
+
+header {
+   display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #ff8888;
+    padding: 0.5em;
+}
+
+/* Style rules for class and id */
+
+#flowers {
+    color: black;
+}
+
+.mobile {
+    display: block;
+
+h1{
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+h3 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* style rules for nav */
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    border: #f6eee4;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+nav li a{
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+/* style rules for main */
+
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+@media screen and (min-width: 620px), print {
+
+
+
+/* tablet viewport: show tab-desk class, hide mobile class */
+
+
+.tab-desk {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* tablet viewport: style rules for nav area */
+
+nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+nav li a {
+    padding: 0.5em;
+}
+
+}
+
+/* media query for desktop viewport */
+
+@media screen and (min-width: 1000px), print {
+    /* style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+}
+nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+}
+
+/* Desktop viewport: Style rules for main content */
+
+#info ul {
+    margin-left: 5%;
+}
+
+}
+
+/* Media query for large desktop viewports */
+
+@media screen and (min-width: 1921px) {
+    body {
+        background: linear-gradient(to bottom, #f6eee4, #ff8888);
+    }
+
+#wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: #ffb9b9;
+}
+
+}
